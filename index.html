@@ -17,31 +17,28 @@
 </head>
 
 <body>
+    
     <header>
-
         <div id="navbar">
-            <a id="logo" >Shubham Traders</a>
-            <a class="menu-btn" href="#hm" >Home</a>
+            <a id="logo">Shubham Traders</a>
+            <!-- Hamburger Icon for Mobile View -->
+            <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+            
+            <!-- Navigation Links -->
+            <a class="menu-btn" href="#hm">Home</a>
             <a class="menu-btn" href="#abt">About Us</a>
             <a class="menu-btn" href="#cate">Categories</a>
             <a class="menu-btn" href="#serv">Our Services</a>
             <a class="menu-btn" href="#contact">Contact Us</a>
-
-            <!-- <input id="inp" placeholder="search here">
-            <button>Search</button> -->
-            <input type="text" class="search" id="search-inp" placeholder="search..">
-
-        <button class="search-btn"  id="search-inp-btn">&#x027A4;</button>
-
-               
-
-
-
-
             
-    </div>
-    
+            <!-- Cart Icon -->
+            <!-- <div class="cart-btn">
+                <i id="cart" class="fas fa-shopping-cart"></i>
+                <span class="cart-quantity">0</span>
+            </div> -->
+        </div>
     </header>
+    
     
 
     <main>
@@ -214,6 +211,13 @@
     <!-- JavaScript -->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
+
+<script>
+    function toggleMenu() {
+        const navbar = document.getElementById('navbar');
+        navbar.classList.toggle('active');
+    }
+</script>
     
 </body>
 </html>
